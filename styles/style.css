@@ -1,6 +1,9 @@
-/* Fonts */
+/*-- Fonts ---*/
+/*Open Sans Condensed*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+/*Open Sans Condensed*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
 /* Mixins */
 /* Variables */
 /* Resets */
@@ -28,11 +31,6 @@ body {
   background: #272727;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 mark {
@@ -206,12 +204,20 @@ mark {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 1em 0 1em;
+  padding: 1em 0 .8em;
   background: black;
 }
 
 .mobile-nav__top span {
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.1em;
+}
+
+.mobile-nav__top h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: .7px;
+  font-weight: 700;
+  font-size: 1.4em;
 }
 
 .mobile-nav__social {
@@ -294,16 +300,15 @@ mark {
 .intro-block .intro-text {
   width: 300px;
   text-align: center;
-  line-height: 1.4em;
-}
-
-.intro-block .container h1 {
-  letter-spacing: 1px;
 }
 
 .intro-block .container h2 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 2.5em;
+  letter-spacing: .2px;
+  font-size: 1.7em;
+}
+
+.intro-block .container mark {
+  margin-right: 2px;
 }
 
 .logo {
@@ -319,6 +324,13 @@ mark {
   z-index: 98;
   width: 3em;
   padding-bottom: 10px;
+}
+
+.logo h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: .7px;
+  font-weight: 700;
+  font-size: .8em;
 }
 
 /* Break Points for Other Screen Sizes */

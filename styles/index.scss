@@ -14,8 +14,6 @@ body {
     background: #272727;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    display: flex; 
-    flex-direction: column;
 }
 
 mark {
@@ -132,11 +130,19 @@ mark {
     @include center;
     flex-direction: column;
     width: 100%;
-    padding: 1em 0 1em;
+    padding: 1em 0 .8em;
     background: black;
     
     span {
         font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        letter-spacing: .7px;
+        font-weight: 700;
+        font-size: 1.4em;
     }
 }
 
@@ -185,15 +191,16 @@ mark {
     .intro-text {
         width: 300px;
         text-align: center;
-        line-height: 1.4em;
     }
 
-    .container h1 {
-        letter-spacing: 1px;
-    }
-    .container h2 {
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-size: 2.5em;
+    .container {
+        h2 {
+            letter-spacing: .2px;
+            font-size: 1.7em;
+        }
+        mark {
+            margin-right: 2px;
+        }
     }
 }
 
@@ -202,6 +209,12 @@ mark {
     z-index: 98;
     width: 3em;
     padding-bottom: 10px;
+    h2 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        letter-spacing: .7px;
+        font-weight: 700;
+        font-size: .8em;
+    }
 }
 
 /* Break Points for Other Screen Sizes */
