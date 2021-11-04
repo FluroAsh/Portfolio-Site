@@ -41,6 +41,10 @@ mark {
   color: #08fdd8;
 }
 
+main {
+  margin: 0 4em;
+}
+
 /* Universal Elements */
 .container {
   display: -webkit-box;
@@ -64,7 +68,11 @@ mark {
   padding: 10px;
   -webkit-box-shadow: 3px 3px 2px #88888850;
           box-shadow: 3px 3px 2px #88888850;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 700px;
+  margin: 1em 0;
 }
 
 /* Background Image for Intro Block, anchored in Outer */
@@ -93,7 +101,7 @@ mark {
   position: fixed;
   top: 0;
   right: 0;
-  margin: .5em;
+  margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,7 +393,7 @@ mark {
           flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
-  padding: 4em 0 0;
+  padding: 1em 0 1em;
 }
 
 .about-section .about-text {
@@ -404,12 +412,14 @@ mark {
           flex-direction: column;
 }
 
-.about-section .about-img1 {
+.about-section .about-img1, .about-section .about-img2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
-  padding-bottom: 20px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: 100%;
+  height: auto;
 }
 
 /* Break Points for Other Screen Sizes */

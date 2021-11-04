@@ -21,6 +21,10 @@ mark {
     color: $link-color;
 }
 
+main {
+    margin: 0 4em;
+}
+
 /* Universal Elements */
 .container { 
     @include center; 
@@ -29,7 +33,9 @@ mark {
 
 .content-wrapper {
     @include content-box;
+    display: flex;
     max-width: 700px;
+    margin: 1em 0;
 }
 
 /* Background Image for Intro Block, anchored in Outer */ 
@@ -55,7 +61,7 @@ mark {
     position: fixed;
     top: 0;
     right: 0;
-    margin: .5em;
+    margin: 5px;
     @include center;
     width: 50px;
     height: 50px;
@@ -246,16 +252,17 @@ mark {
     flex-direction: column;
     min-height: 100vh;
     overflow: hidden;
-    padding: 4em 0 0;
+    padding: 1em 0 1em;
     
     .about-text {
         @include center($align-items: flex-start);
         flex-direction: column;
     }
-    .about-img1 {
+    .about-img1, .about-img2 {
         display: flex;
-        width: 30%;
-        padding-bottom: 20px;
+        flex-shrink: 1;
+        width: 100%;
+        height: auto;
     }
 
 }
