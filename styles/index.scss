@@ -9,11 +9,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: white;
     @include center;
+    flex-direction: column;
     min-height: 100vh;
-    margin: 0 2em;
     background: #272727;
     overflow-x: hidden;
     scroll-behavior: smooth;
+
 }
 
 mark {
@@ -25,6 +26,24 @@ mark {
 .container { 
     @include center; 
     flex-direction: column;
+}
+
+/* Background Image for Intro Block */ 
+.outer {
+    height: 100vh;
+    width: 100vw;
+    img[src*="flinders-bg.jpg"] {
+        position: absolute;
+        z-index: -1;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        filter: opacity(0.5) blur(2px);
+    }
+}
+
+.inner {
+    margin: 0 4em;
 }
 
 /* Hamburger Structure */
@@ -39,6 +58,8 @@ mark {
     cursor: pointer;
     transition: all .3s ease-in-out;
     z-index: 99;
+    background: #64646450;
+    border-radius: 15px;
 }
 
 .menu-btn__burger {
@@ -46,7 +67,6 @@ mark {
     height: 5px;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .3s ease-in-out;
 }
 
@@ -73,7 +93,6 @@ mark {
 .menu-btn.open .menu-btn__burger {
     transform: translateX(50px);
     background: transparent;
-    box-shadow: none;
 }
 
 .menu-btn.open .menu-btn__burger::before {
@@ -102,16 +121,14 @@ mark {
     
     .nav-btn {
         @include center;
-        width: 100%;
+        width: 18em;
         text-align: center;
         flex-direction: row;
-        line-height: 1.2em;
+        line-height: 1.5em;
         margin: 0 auto;
         padding: 12px 16px;
         color: #fff;
         text-decoration: none;
-        // border-top: $hover-color;
-        // border-bottom: $hover-color;
     }
 
     .nav-links a:hover {
@@ -146,19 +163,30 @@ mark {
     }
 }
 
+.logo {
+    @include center;
+    z-index: 98;
+    width: 3em;
+    padding-bottom: 10px;
+    h2 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        letter-spacing: .7px;
+        font-weight: 700;
+        font-size: .8em;
+    }
+}
+
 .mobile-nav__social {
     @include center;
     width: 100%;
     flex-flow: row wrap;
-    padding-bottom: 5px;
-    
+
     a {
         @include center;
         list-style: none;
         text-decoration: none;
-        padding: 2px;
+        padding: 0 5px 10px;
         color: #909096;
-        // flex-direction: row;
         
         :hover {
             color: $link-color;
@@ -175,11 +203,12 @@ mark {
 
 
 /* Home - Landing Page */
-.intro-block {
+.intro-section {
     @include center;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     
-    .portrait img {
+    #ashley-headshot {
         width: 100%;
         @include center;
         margin: 10px;
@@ -204,18 +233,24 @@ mark {
     }
 }
 
-.logo {
-    @include center;
-    z-index: 98;
-    width: 3em;
-    padding-bottom: 10px;
-    h2 {
-        font-family: 'Open Sans Condensed', sans-serif;
-        letter-spacing: .7px;
-        font-weight: 700;
-        font-size: .8em;
+/* About Section */
+.about-section {
+    @include center($align-items: flex-start);
+    min-height: 100vh;
+    overflow: hidden;
+    padding-top: 4em;
+
+    .about-wrapper {
+        @include content-box;
+    }
+    
+    .about-text {
+        @include center;
+        flex-direction: column;
     }
 }
+
+
 
 /* Break Points for Other Screen Sizes */
 /***--Tablets--***/
