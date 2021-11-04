@@ -267,6 +267,9 @@ main {
             @include generic-button;
             
             a {
+                @include center;
+                height: 100%;
+                width: 100%;
                 text-decoration: none;
                 color: white;
             }
@@ -287,6 +290,9 @@ main {
             @include generic-button;
             
             a {
+                @include center;
+                height: 100%;
+                width: 100%;
                 text-decoration: none;
                 color: white;
              }
