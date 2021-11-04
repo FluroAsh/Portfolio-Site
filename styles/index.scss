@@ -259,7 +259,7 @@ main {
         flex-direction: column;
     }
     .about-img1, .about-img2 {
-        display: flex;
+        @include center;
         flex-shrink: 1;
         width: 100%;
         height: auto;
