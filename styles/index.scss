@@ -14,7 +14,6 @@ body {
     color: white;
     @include center;
     flex-direction: column;
-    min-height: 100vh;
     background: #272727;
     overflow-x: hidden;
 }
@@ -38,6 +37,15 @@ main {
     @include content-box;
     display: flex;
     max-width: 700px;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 /* Outer used to wrap the page */
@@ -235,13 +243,16 @@ main {
     }
 
     .container {
-        p {
-            font-size: 1.5em;
-        }
-        
         h2 {
+            font-family: 'Acme', sans-serif;
             letter-spacing: .2px;
-            font-size: 1.7em;
+            font-size: 2em;
+        }
+
+        p {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 1.5em;
         }
         
         mark {
@@ -275,13 +286,12 @@ main {
             }
         }
         .contact-btn:hover {
-            background: rgba(255, 255, 255, 0.9);
-            color: $link-color;
+            background: rgba(255, 255, 255, 0.85);
             transition: .4s;
 
             a {
                 text-decoration: none;
-                color: $link-color;
+                color: $link-color-dim;
                }
         }
         
@@ -298,12 +308,12 @@ main {
              }
         }
         .portfolio-btn:hover {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.85);
             transition: .4s;
             
             a {
                 text-decoration: none;
-                color: $link-color;
+                color: $link-color-dim;
                }
         }
     }

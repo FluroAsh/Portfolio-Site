@@ -1,9 +1,12 @@
 /*-- Fonts ---*/
-/*Open Sans Condensed*/
+/*Montserrat*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 /*Open Sans Condensed*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+/* -- */
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 /* Mixins */
 /* Variables */
 /* Resets */
@@ -34,7 +37,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
   background: #272727;
   overflow-x: hidden;
 }
@@ -75,6 +77,15 @@ main {
   display: -ms-flexbox;
   display: flex;
   max-width: 700px;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 /* Outer used to wrap the page */
@@ -363,13 +374,16 @@ main {
   text-align: center;
 }
 
-.intro-section .container p {
-  font-size: 1.5em;
+.intro-section .container h2 {
+  font-family: 'Acme', sans-serif;
+  letter-spacing: .2px;
+  font-size: 2em;
 }
 
-.intro-section .container h2 {
-  letter-spacing: .2px;
-  font-size: 1.7em;
+.intro-section .container p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 .intro-section .container mark {
@@ -422,11 +436,14 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 180px;
   height: 50px;
   margin: 10px 0 0px;
   border-radius: 5px;
-  background: #08fdd8;
+  background: #0ec6aa;
   color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -449,15 +466,14 @@ main {
 }
 
 .about-section .content-wrapper .contact-btn:hover {
-  background: rgba(255, 255, 255, 0.9);
-  color: #08fdd8;
+  background: rgba(255, 255, 255, 0.85);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 .about-section .content-wrapper .contact-btn:hover a {
   text-decoration: none;
-  color: #08fdd8;
+  color: #0ec6aa;
 }
 
 .about-section .content-wrapper .portfolio-btn {
@@ -470,11 +486,14 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 180px;
   height: 50px;
   margin: 10px 0 0px;
   border-radius: 5px;
-  background: #08fdd8;
+  background: #0ec6aa;
   color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -497,14 +516,14 @@ main {
 }
 
 .about-section .content-wrapper .portfolio-btn:hover {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.85);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 .about-section .content-wrapper .portfolio-btn:hover a {
   text-decoration: none;
-  color: #08fdd8;
+  color: #0ec6aa;
 }
 
 .about-section .content-block {

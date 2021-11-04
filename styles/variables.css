@@ -1,9 +1,12 @@
 /*-- Fonts ---*/
-/*Open Sans Condensed*/
+/*Montserrat*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 /*Open Sans Condensed*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+/* -- */
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
 /* Mixins */
 /* Variables */
 /*# sourceMappingURL=variables.css.map */
