@@ -13,10 +13,10 @@
 }
 
 @mixin content-box {
-    background: #646464;
-    border: 3px solid black;
-    border-radius: 10px;
+    background: #f1f1f150;
+    border-radius: 2px;
     padding: 10px;
+    box-shadow: 3px 3px 2px #88888850; 
 }
 
 /* Variables */

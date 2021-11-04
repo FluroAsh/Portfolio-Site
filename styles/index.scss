@@ -14,7 +14,6 @@ body {
     background: #272727;
     overflow-x: hidden;
     scroll-behavior: smooth;
-
 }
 
 mark {
@@ -22,13 +21,18 @@ mark {
     color: $link-color;
 }
 
-/* Universal Containers */
+/* Universal Elements */
 .container { 
     @include center; 
     flex-direction: column;
 }
 
-/* Background Image for Intro Block */ 
+.content-wrapper {
+    @include content-box;
+    max-width: 700px;
+}
+
+/* Background Image for Intro Block, anchored in Outer */ 
 .outer {
     height: 100vh;
     width: 100vw;
@@ -218,11 +222,14 @@ mark {
     }
     
     .intro-text {
-        width: 300px;
+        max-width: 300px;
         text-align: center;
     }
 
     .container {
+        p {
+            font-size: 1.2em;
+        }
         h2 {
             letter-spacing: .2px;
             font-size: 1.7em;
@@ -235,19 +242,22 @@ mark {
 
 /* About Section */
 .about-section {
-    @include center($align-items: flex-start);
+    @include center($justify-content: flex-start);
+    flex-direction: column;
     min-height: 100vh;
     overflow: hidden;
-    padding-top: 4em;
-
-    .about-wrapper {
-        @include content-box;
-    }
+    padding: 4em 0 0;
     
     .about-text {
-        @include center;
+        @include center($align-items: flex-start);
         flex-direction: column;
     }
+    .about-img1 {
+        display: flex;
+        width: 30%;
+        padding-bottom: 20px;
+    }
+
 }
 
 

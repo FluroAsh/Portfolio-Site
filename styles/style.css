@@ -41,7 +41,7 @@ mark {
   color: #08fdd8;
 }
 
-/* Universal Containers */
+/* Universal Elements */
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,6 +58,16 @@ mark {
           flex-direction: column;
 }
 
+.content-wrapper {
+  background: #f1f1f150;
+  border-radius: 2px;
+  padding: 10px;
+  -webkit-box-shadow: 3px 3px 2px #88888850;
+          box-shadow: 3px 3px 2px #88888850;
+  max-width: 700px;
+}
+
+/* Background Image for Intro Block, anchored in Outer */
 .outer {
   height: 100vh;
   width: 100vw;
@@ -341,8 +351,12 @@ mark {
 }
 
 .intro-section .intro-text {
-  width: 300px;
+  max-width: 300px;
   text-align: center;
+}
+
+.intro-section .container p {
+  font-size: 1.2em;
 }
 
 .intro-section .container h2 {
@@ -359,22 +373,19 @@ mark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
-  padding-top: 4em;
-}
-
-.about-section .about-wrapper {
-  background: #646464;
-  border: 3px solid black;
-  border-radius: 10px;
-  padding: 10px;
+  padding: 4em 0 0;
 }
 
 .about-section .about-text {
@@ -384,13 +395,21 @@ mark {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.about-section .about-img1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  padding-bottom: 20px;
 }
 
 /* Break Points for Other Screen Sizes */
