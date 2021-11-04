@@ -51,7 +51,10 @@ main {
         z-index: -1;
         height: 100vh;
         width: 100vw;
+        // margin-left: auto;
+        // margin-right: auto;
         object-fit: cover;
+        margin: 0 auto 50px;
         filter: opacity(0.5) blur(2px);
     }
 }
@@ -233,12 +236,14 @@ main {
 
     .container {
         p {
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
+        
         h2 {
             letter-spacing: .2px;
             font-size: 1.7em;
         }
+        
         mark {
             margin-right: 2px;
         }
@@ -253,6 +258,50 @@ main {
     overflow: hidden;
     padding: 0 0 2em;
 
+    .content-wrapper {
+        @include center;
+        flex-direction: column;
+
+        .contact-btn {
+            @include center;
+            @include generic-button;
+            
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .contact-btn:hover {
+            background: rgba(255, 255, 255, 0.9);
+            color: $link-color;
+            transition: .4s;
+
+            a {
+                text-decoration: none;
+                color: $link-color;
+               }
+        }
+        
+        .portfolio-btn {
+            @include center;
+            @include generic-button;
+            
+            a {
+                text-decoration: none;
+                color: white;
+             }
+        }
+        .portfolio-btn:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transition: .4s;
+            
+            a {
+                text-decoration: none;
+                color: $link-color;
+               }
+        }
+    }
+    
     .content-block {
         @include center;
         flex-direction: column;
@@ -264,6 +313,7 @@ main {
     .about-text {
         @include center($align-items: flex-start);
         flex-direction: column;
+        
         p {
             line-height: 1.2em;
         }
@@ -278,6 +328,7 @@ main {
     }
 }
 
+/* Site Footer */
 .site-footer {
     @include center;
     flex-direction: column;
@@ -306,7 +357,7 @@ main {
                 text-decoration: none;
                 padding: 0 5px 10px;
                 fill: #909096;
-                
+            
                 :hover {
                     color: $link-color;
                     fill: $link-color;

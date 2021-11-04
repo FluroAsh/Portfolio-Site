@@ -69,8 +69,8 @@ main {
   background: #f1f1f150;
   border-radius: 2px;
   padding: 10px;
-  -webkit-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,9 +82,6 @@ main {
 .outer {
   height: 100vh;
   width: 100vw;
-  border-bottom: #646464;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px inset;
-          box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px inset;
 }
 
 .outer img[src*="flinders-bg.jpg"] {
@@ -94,6 +91,7 @@ main {
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 0 auto 50px;
   -webkit-filter: opacity(0.5) blur(2px);
           filter: opacity(0.5) blur(2px);
 }
@@ -366,7 +364,7 @@ main {
 }
 
 .intro-section .container p {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .intro-section .container h2 {
@@ -396,6 +394,95 @@ main {
   min-height: 100vh;
   overflow: hidden;
   padding: 0 0 2em;
+}
+
+.about-section .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-section .content-wrapper .contact-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 10px 0 0px;
+  border-radius: 5px;
+  background: #08fdd8;
+  color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.about-section .content-wrapper .contact-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.about-section .content-wrapper .contact-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #08fdd8;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.about-section .content-wrapper .contact-btn:hover a {
+  text-decoration: none;
+  color: #08fdd8;
+}
+
+.about-section .content-wrapper .portfolio-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 10px 0 0px;
+  border-radius: 5px;
+  background: #08fdd8;
+  color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.about-section .content-wrapper .portfolio-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.about-section .content-wrapper .portfolio-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.about-section .content-wrapper .portfolio-btn:hover a {
+  text-decoration: none;
+  color: #08fdd8;
 }
 
 .about-section .content-block {
@@ -454,6 +541,7 @@ main {
   padding: 2em 0;
 }
 
+/* Site Footer */
 .site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
