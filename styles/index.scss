@@ -38,6 +38,7 @@ main {
     margin: 1em 0 0;
 }
 
+/* Outer used to wrap the page */
 /* Background Image for Intro Block, anchored in Outer */ 
 .outer {
     height: 100vh;
@@ -52,11 +53,7 @@ main {
     }
 }
 
-.inner {
-    margin: 0 4em;
-}
-
-/* Hamburger Structure */
+/* Hamburger Button Structure */
 .menu-btn {
     position: fixed;
     top: 0;
@@ -112,7 +109,6 @@ main {
 .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(-35px, -35px);
 }
-
 
 /* Slide Out Mobile Menu */
 .mobile-nav {
@@ -210,7 +206,6 @@ main {
         fill: #646464;
     }
 }
-
 
 /* Home - Landing Page */
 .intro-section {

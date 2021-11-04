@@ -75,6 +75,7 @@ main {
   margin: 1em 0 0;
 }
 
+/* Outer used to wrap the page */
 /* Background Image for Intro Block, anchored in Outer */
 .outer {
   height: 100vh;
@@ -92,11 +93,7 @@ main {
           filter: opacity(0.5) blur(2px);
 }
 
-.inner {
-  margin: 0 4em;
-}
-
-/* Hamburger Structure */
+/* Hamburger Button Structure */
 .menu-btn {
   position: fixed;
   top: 0;
