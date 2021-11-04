@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -13,7 +17,6 @@ body {
     min-height: 100vh;
     background: #272727;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 mark {
@@ -35,7 +38,6 @@ main {
     @include content-box;
     display: flex;
     max-width: 700px;
-    margin: 1em 0 0;
 }
 
 /* Outer used to wrap the page */
@@ -43,6 +45,7 @@ main {
 .outer {
     height: 100vh;
     width: 100vw;
+    
     img[src*="flinders-bg.jpg"] {
         position: absolute;
         z-index: -1;
@@ -140,8 +143,8 @@ main {
     .nav-links a:hover {
         color: $link-color;
         border-radius: 7px;
-        background: $hover-color;
-        transition: 0.4s;
+        background: $link-static-color;
+        transition: .4s;
     }
 }
 
@@ -174,6 +177,7 @@ main {
     z-index: 98;
     width: 3em;
     padding-bottom: 10px;
+    
     h2 {
         font-family: 'Open Sans Condensed', sans-serif;
         letter-spacing: .7px;
@@ -185,7 +189,7 @@ main {
 .mobile-nav__social {
     @include center;
     width: 100%;
-    flex-flow: row wrap;
+    flex-direction: row;
 
     a {
         @include center;
@@ -247,31 +251,98 @@ main {
     flex-direction: column;
     min-height: 100vh;
     overflow: hidden;
-    padding: .5em 0 .5em;
+    padding: 0 0 2em;
 
     .content-block {
         @include center;
         flex-direction: column;
         width: 100%;
         max-height: 700px;
-        margin: 1em 0;
+        padding: 2em 0 0;
     }
     
     .about-text {
         @include center($align-items: flex-start);
         flex-direction: column;
+        p {
+            line-height: 1.2em;
+        }
     }
+
     .about-img1, .about-img2 {
         @include center;
         flex-shrink: 1;
         width: 100%;
         height: auto;
+        padding: 2em 0;
     }
-    
-
 }
 
+.site-footer {
+    @include center;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    height: 250px;
+    padding: 2em 0 1em;
+    line-height: 1.7em;
+    border-bottom: #646464;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+    
+    .container {
+        a {
+            @include link-format($link-color: white);
+        }
+        
+        a:hover {
+            color: $link-color;
+        }
+        
+        .footer-socials {
+            margin: 1em 0;    
+            
+            a {
+                flex-direction: row;
+                text-decoration: none;
+                padding: 0 5px 10px;
+                fill: #909096;
+                
+                :hover {
+                    color: $link-color;
+                    fill: $link-color;
+                    transition: .2s;
+                }
+            }
+        }
+    }
 
+    .to-top {
+        background-color: transparent; 
+        border: none;
+
+        .circle-button {
+            @include center;
+            background: $link-static-color;
+            height: 45px;
+            width: 45px;
+            margin: 1em;
+            border-radius: 50%;
+            box-shadow: 0 7px 20px 0px rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.2);
+        }
+        
+        .circle-button:hover {
+            background: $link-color;
+            transition: background .5s;
+        }
+
+        svg {
+            position: relative;
+            fill: #272727;
+            bottom: .2em;
+            width: 80%;
+        }
+    }
+}
 
 /* Break Points for Other Screen Sizes */
 /***--Tablets--***/

@@ -16,9 +16,15 @@
     background: #f1f1f150;
     border-radius: 2px;
     padding: 10px;
-    box-shadow: 3px 3px 2px #88888850; 
+    box-shadow: 0 7px 20px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.2);
+}
+
+@mixin link-format($link-color: color) {
+    color: $link-color;
+    text-decoration: none;
+    transition: .4s;
 }
 
 /* Variables */
 $link-color: #08fdd8;
-$hover-color: #646464;
+$link-static-color: #646464;
