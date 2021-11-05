@@ -1,4 +1,4 @@
-/*-- Fonts ---*/
+/*-- Fonts --*/
 /*Montserrat*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
@@ -39,8 +39,71 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-/* Variables */
+/*-- Variables --*/
 /* Link color doubles up as primary color at the moment */
 $primary-color: #08fdd8;
 $primary-color-dim: #0ec6aa;
 $link-static-color: #646464;
+
+
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*-- Universal Elements --*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    @include center;
+    flex-direction: column;
+    background: #272727;
+    overflow-x: hidden;
+}
+
+mark {
+    background-color: transparent;
+    color: $primary-color;
+}
+
+main {
+    margin: 0 4em;
+}
+
+.content-wrapper {
+    @include content-box;
+    display: flex;
+    max-width: 700px;
+}
+
+.image-wrapper {
+    @include center;
+}
+
+.container { 
+    @include center; 
+    flex-direction: column;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: .8px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: .8px;
+    text-align: center;
+    font-weight: 300;
+}
