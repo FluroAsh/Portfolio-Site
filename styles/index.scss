@@ -20,7 +20,7 @@ body {
 
 mark {
     background-color: transparent;
-    color: $link-color;
+    color: $primary-color;
 }
 
 main {
@@ -153,7 +153,7 @@ h2 {
     }
 
     .nav-links a:hover {
-        color: $link-color;
+        color: $primary-color;
         border-radius: 7px;
         background: $link-static-color;
         transition: .4s;
@@ -211,8 +211,8 @@ h2 {
         color: #909096;
         
         :hover {
-            color: $link-color;
-            fill: $link-color;
+            color: $primary-color;
+            fill: $primary-color;
             transition: fill .2s;
         }
     }
@@ -294,7 +294,7 @@ h2 {
 
             a {
                 text-decoration: none;
-                color: $link-color-dim;
+                color: $primary-color-dim;
                }
         }
     }
@@ -316,11 +316,10 @@ h2 {
         }
         a {
             @include link-format;
-            text-decoration: underline;
-            
+            text-decoration: underline; 
         }
         a:hover {
-            color: $link-color-dim;
+            color: $primary-color-dim;
         }
     }
 
@@ -347,11 +346,11 @@ h2 {
     
     .container {
         a {
-            @include link-format($link-color: white);
+            @include link-format($primary-color: white);
         }
         
         a:hover {
-            color: $link-color;
+            color: $primary-color;
         }
         
         .footer-socials {
@@ -364,8 +363,8 @@ h2 {
                 fill: #909096;
             
                 :hover {
-                    color: $link-color;
-                    fill: $link-color;
+                    color: $primary-color;
+                    fill: $primary-color;
                     transition: .2s;
                 }
             }
@@ -387,7 +386,7 @@ h2 {
         }
         
         .circle-button:hover {
-            background: $link-color;
+            background: $primary-color;
             transition: background .5s;
         }
 
