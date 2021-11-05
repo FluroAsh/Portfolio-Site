@@ -5,7 +5,7 @@
 /*Open Sans Condensed*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
-/* -- */
+/*Acme */
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 /* Mixins */
@@ -40,6 +40,7 @@
 }
 
 /* Variables */
+/* Link color doubles up as primary color at the moment */
 $link-color: #08fdd8;
 $link-color-dim: #0ec6aa;
 $link-static-color: #646464;

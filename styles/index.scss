@@ -273,7 +273,7 @@ h2 {
         @include center;
         flex-direction: column;
 
-        .contact-btn {
+        .gen-btn {
             @include center;
             @include generic-button;
             
@@ -285,32 +285,10 @@ h2 {
                 color: white;
             }
         }
-        .contact-btn:hover {
+        .gen-btn:hover {
             background: rgba(255, 255, 255, 0.85);
             transition: .4s;
 
-            a {
-                text-decoration: none;
-                color: $link-color-dim;
-               }
-        }
-        
-        .portfolio-btn {
-            @include center;
-            @include generic-button;
-            
-            a {
-                @include center;
-                height: 100%;
-                width: 100%;
-                text-decoration: none;
-                color: white;
-             }
-        }
-        .portfolio-btn:hover {
-            background: rgba(255, 255, 255, 0.85);
-            transition: .4s;
-            
             a {
                 text-decoration: none;
                 color: $link-color-dim;
