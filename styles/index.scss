@@ -41,6 +41,7 @@ main {
 
 p {
     font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: .8px;
 }
 
 h2 {
@@ -272,10 +273,12 @@ h2 {
     .content-wrapper {
         @include center;
         flex-direction: column;
+        
 
         .gen-btn {
             @include center;
             @include generic-button;
+            z-index: 1;
             
             a {
                 @include center;
@@ -310,6 +313,14 @@ h2 {
         
         p {
             line-height: 1.2em;
+        }
+        a {
+            @include link-format;
+            text-decoration: underline;
+            
+        }
+        a:hover {
+            color: $link-color-dim;
         }
     }
 

@@ -5,7 +5,7 @@
 /*Open Sans Condensed*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
-/* -- */
+/*Acme */
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 /* Mixins */
 /* Variables */
@@ -82,6 +82,7 @@ main {
 
 p {
   font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: .8px;
 }
 
 h2 {
@@ -427,7 +428,7 @@ h2 {
           flex-direction: column;
 }
 
-.about-section .content-wrapper .contact-btn {
+.about-section .content-wrapper .gen-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,9 +449,10 @@ h2 {
   color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  z-index: 1;
 }
 
-.about-section .content-wrapper .contact-btn a {
+.about-section .content-wrapper .gen-btn a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,63 +468,13 @@ h2 {
   color: white;
 }
 
-.about-section .content-wrapper .contact-btn:hover {
+.about-section .content-wrapper .gen-btn:hover {
   background: rgba(255, 255, 255, 0.85);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
-.about-section .content-wrapper .contact-btn:hover a {
-  text-decoration: none;
-  color: #0ec6aa;
-}
-
-.about-section .content-wrapper .portfolio-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 180px;
-  height: 50px;
-  margin: 10px 0 0px;
-  border-radius: 5px;
-  background: #0ec6aa;
-  color: white;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-
-.about-section .content-wrapper .portfolio-btn a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-  color: white;
-}
-
-.about-section .content-wrapper .portfolio-btn:hover {
-  background: rgba(255, 255, 255, 0.85);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.about-section .content-wrapper .portfolio-btn:hover a {
+.about-section .content-wrapper .gen-btn:hover a {
   text-decoration: none;
   color: #0ec6aa;
 }
@@ -564,6 +516,18 @@ h2 {
 
 .about-section .about-text p {
   line-height: 1.2em;
+}
+
+.about-section .about-text a {
+  color: #08fdd8;
+  text-decoration: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+  text-decoration: underline;
+}
+
+.about-section .about-text a:hover {
+  color: #0ec6aa;
 }
 
 .about-section .about-img1, .about-section .about-img2 {
