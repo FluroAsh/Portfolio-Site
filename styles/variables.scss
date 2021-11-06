@@ -362,6 +362,7 @@ h3 {
 
 // /***--Desktops & Large Screen--***/
 @media only screen and(min-width: 1200px) {
-    
-
+    div .blog-content .container .gen-btn {
+        display: none;
+    }
 }

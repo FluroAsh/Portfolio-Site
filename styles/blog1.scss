@@ -3,7 +3,7 @@
     min-height: 100vh;
     width: 100%;
     flex-direction: column;
-    padding: 50px 0; 
+    padding: 50px 0 0; 
     
     .page-heading {
         border-bottom: 2px solid white;
@@ -34,6 +34,38 @@
 
         .image-wrapper {
             padding: 8px 0;
+        }
+
+        .content-wrapper {
+            @include center;
+            flex-direction: column;
+        }
+
+        .gen-btn {
+            @include center;
+            @include generic-button;
+            
+            a {
+                @include center;
+                height: 100%;
+                width: 100%;
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .gen-btn:hover {
+            background: rgba(255, 255, 255, 0.85);
+            transition: .4s;
+
+            a {
+                text-decoration: none;
+                color: $primary-color-dim;
+                }
+        }
+
+        h3 {
+            width: 100%;
+            @include center;
         }
     }
 }
