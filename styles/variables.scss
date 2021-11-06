@@ -40,7 +40,6 @@
 }
 
 /*-- Variables --*/
-/* Link color doubles up as primary color at the moment */
 $primary-color: #08fdd8;
 $primary-color-dim: #0ec6aa;
 $link-static-color: #646464;
@@ -169,7 +168,7 @@ h3 {
     transform: translateY(13px);
 }
 
-/* Hamburger Animation */
+/*-- Hamburger Animation --*/
 .menu-btn.open .menu-btn__burger {
     transform: translateX(50px);
     background: transparent;
@@ -183,7 +182,7 @@ h3 {
     transform: rotate(-45deg) translate(-35px, -35px);
 }
 
-/* Slide Out Mobile Menu */
+/*-- Slide Out Mobile Menu --*/
 .mobile-nav {
     display: flex;
     position: fixed;
@@ -281,7 +280,7 @@ h3 {
     }
 }
 
-/* Site Footer */
+/*-- Site Footer --*/
 .site-footer {
     @include center;
     flex-direction: column;

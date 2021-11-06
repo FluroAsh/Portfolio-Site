@@ -11,7 +11,7 @@
         margin-bottom: 1em;
     }
 
-    /*Placeholder Images */
+    /* Placeholder Images */
     img {
         @include center;
         object-fit: cover;
@@ -19,12 +19,31 @@
         max-height: 350px;
         border-radius: 5px;
         border: 2px solid rgba(0, 0, 0, 0.5);
+        opacity: 90%;
     }
 
     .image-wrapper a:hover img {
         // box-shadow: 0 0 7px 1px $primary-color; /*!! Not sure if I prefer the box-shadow or not! */
         border: 2px solid $primary-color;
+        opacity: 100%;
         transition: .2s;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .blog-details {
+        display: flex;
+        padding-top: 1em;
+        
+        font-weight: 700;
+        flex-flow: row wrap;
+        
+        .blog-author, .blog-date {
+            padding-right: 5px;
+            font-size: 12px;
+        }
     }
 
     .container {

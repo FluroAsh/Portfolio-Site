@@ -9,7 +9,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 /*-- Mixins --*/
 /*-- Variables --*/
-/* Link color doubles up as primary color at the moment */
 /*-- Resets --*/
 * {
   padding: 0;
@@ -197,7 +196,7 @@ h3 {
           transform: translateY(13px);
 }
 
-/* Hamburger Animation */
+/*-- Hamburger Animation --*/
 .menu-btn.open .menu-btn__burger {
   -webkit-transform: translateX(50px);
           transform: translateX(50px);
@@ -214,7 +213,7 @@ h3 {
           transform: rotate(-45deg) translate(-35px, -35px);
 }
 
-/* Slide Out Mobile Menu */
+/*-- Slide Out Mobile Menu --*/
 .mobile-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,7 +370,7 @@ h3 {
   fill: #646464;
 }
 
-/* Site Footer */
+/*-- Site Footer --*/
 .site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,7 +485,7 @@ h3 {
           filter: opacity(0.5) blur(2px);
 }
 
-/* Home - Landing Page */
+/*-- Home - Landing Page --*/
 .intro-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,7 +535,7 @@ h3 {
   margin-right: 2px;
 }
 
-/* About Section */
+/*-- About Section --*/
 .about-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,7 +689,7 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px 0;
-  /*Placeholder Images */
+  /* Placeholder Images */
 }
 
 .blog-overview .page-heading {
@@ -714,12 +713,38 @@ h3 {
   max-height: 350px;
   border-radius: 5px;
   border: 2px solid rgba(0, 0, 0, 0.5);
+  opacity: 90%;
 }
 
 .blog-overview .image-wrapper a:hover img {
   border: 2px solid #08fdd8;
+  opacity: 100%;
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+.blog-overview .content-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-overview .blog-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1em;
+  font-weight: 700;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.blog-overview .blog-details .blog-author, .blog-overview .blog-details .blog-date {
+  padding-right: 5px;
+  font-size: 12px;
 }
 
 .blog-overview .container {

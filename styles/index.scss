@@ -17,7 +17,7 @@
     }
 }
 
-/* Home - Landing Page */
+/*-- Home - Landing Page --*/
 .intro-section {
     @include center;
     min-height: 100vh;
@@ -53,7 +53,7 @@
     }
 }
 
-/* About Section */
+/*-- About Section --*/
 .about-section {
     @include center($justify-content: flex-start);
     flex-direction: column;
