@@ -14,7 +14,6 @@
     /* Placeholder Images */
     img {
         @include center;
-        object-fit: cover;
         max-width: 100%;
         max-height: 350px;
         border-radius: 5px;
@@ -36,7 +35,6 @@
     .blog-details {
         display: flex;
         padding-top: 1em;
-        
         font-weight: 700;
         flex-flow: row wrap;
         
@@ -56,3 +54,21 @@
     }
 }   
 
+/* Break Points for Other Screen Sizes */
+/***--Tablets--***/
+@media only screen and(min-width: 481px) {
+    
+}
+
+@media only screen and(min-width: 769px) {
+    body {
+        p {
+            font-size: 1.4em;
+        }
+        h2 {
+            font-size: 1.8em;
+        }
+    }
+
+    /*Increase button sizes */
+}

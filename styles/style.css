@@ -17,7 +17,7 @@
           box-sizing: border-box;
 }
 
-/*-- Universal Elements --*/
+/*-- Defaults for Universal Elements --*/
 html {
   scroll-behavior: smooth;
 }
@@ -54,6 +54,7 @@ main {
 p {
   font-family: 'Open Sans Condensed', sans-serif;
   letter-spacing: .8px;
+  word-wrap: break-word;
 }
 
 h2 {
@@ -466,6 +467,15 @@ h3 {
 
 /* Break Points for Other Screen Sizes */
 /***--Tablets--***/
+@media only screen and (min-width: 481px) {
+  .blog-overview .content-wrapper {
+    max-width: 900px;
+  }
+  .blog-content .content-wrapper {
+    max-width: 1200px;
+  }
+}
+
 /* Outer used to wrap the page */
 /* Background Image for Intro Block, anchored in Outer */
 .outer {
@@ -707,8 +717,6 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -o-object-fit: cover;
-     object-fit: cover;
   max-width: 100%;
   max-height: 350px;
   border-radius: 5px;
@@ -753,6 +761,80 @@ h3 {
 }
 
 .blog-overview .container .image-wrapper {
+  padding: 8px 0;
+}
+
+/* Break Points for Other Screen Sizes */
+/***--Tablets--***/
+@media only screen and (min-width: 769px) {
+  body p {
+    font-size: 1.4em;
+  }
+  body h2 {
+    font-size: 1.8em;
+  }
+  /*Increase button sizes */
+}
+
+.blog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 0;
+}
+
+.blog-content .page-heading {
+  border-bottom: 2px solid white;
+  margin-bottom: 1em;
+}
+
+.blog-content a {
+  color: #08fdd8;
+  text-decoration: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+  text-decoration: underline;
+}
+
+.blog-content a:hover {
+  color: #0ec6aa;
+}
+
+.blog-content img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  max-height: 350px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  opacity: 90%;
+}
+
+.blog-content .container {
+  padding: 1em 0 1em;
+  border-top: 0.5px solid #646464;
+}
+
+.blog-content .container .image-wrapper {
   padding: 8px 0;
 }
 /*# sourceMappingURL=style.css.map */

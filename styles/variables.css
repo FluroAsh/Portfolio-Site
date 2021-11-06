@@ -17,7 +17,7 @@
           box-sizing: border-box;
 }
 
-/*-- Universal Elements --*/
+/*-- Defaults for Universal Elements --*/
 html {
   scroll-behavior: smooth;
 }
@@ -54,6 +54,7 @@ main {
 p {
   font-family: 'Open Sans Condensed', sans-serif;
   letter-spacing: .8px;
+  word-wrap: break-word;
 }
 
 h2 {
@@ -466,4 +467,12 @@ h3 {
 
 /* Break Points for Other Screen Sizes */
 /***--Tablets--***/
+@media only screen and (min-width: 481px) {
+  .blog-overview .content-wrapper {
+    max-width: 900px;
+  }
+  .blog-content .content-wrapper {
+    max-width: 1200px;
+  }
+}
 /*# sourceMappingURL=variables.css.map */
