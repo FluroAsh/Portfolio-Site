@@ -371,6 +371,100 @@ h3 {
   fill: #646464;
 }
 
+/* Site Footer */
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  bottom: 0;
+  height: 250px;
+  padding: 2em 0 1em;
+  line-height: 1.7em;
+  border-bottom: #646464;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+}
+
+.site-footer .container a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.site-footer .container a:hover {
+  color: #08fdd8;
+}
+
+.site-footer .container .footer-socials {
+  margin: 1em 0;
+}
+
+.site-footer .container .footer-socials a {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-decoration: none;
+  padding: 0 5px 10px;
+  fill: #909096;
+}
+
+.site-footer .container .footer-socials a :hover {
+  color: #08fdd8;
+  fill: #08fdd8;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.site-footer .to-top {
+  background-color: transparent;
+  border: none;
+}
+
+.site-footer .to-top .circle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #646464;
+  height: 45px;
+  width: 45px;
+  margin: 1em;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 7px 20px 0px rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 7px 20px 0px rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.site-footer .to-top .circle-button:hover {
+  background: #08fdd8;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.site-footer .to-top svg {
+  position: relative;
+  fill: #272727;
+  bottom: .2em;
+  width: 80%;
+}
+
 /* Break Points for Other Screen Sizes */
 /***--Tablets--***/
 /*# sourceMappingURL=variables.css.map */
