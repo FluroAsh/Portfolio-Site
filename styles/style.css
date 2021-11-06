@@ -145,7 +145,7 @@ h3 {
 .menu-btn {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,11 +729,5 @@ h3 {
 
 .blog-overview .container .image-wrapper {
   padding: 8px 0;
-}
-
-.blog-overview .container .container::after {
-  content: '';
-  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
-          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
 }
 /*# sourceMappingURL=style.css.map */

@@ -33,11 +33,6 @@
         .image-wrapper {
             padding: 8px 0;
         }
-        
-        .container::after {
-            content: '';
-            box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
-        }
     }
 }   
 
