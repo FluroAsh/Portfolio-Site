@@ -477,7 +477,7 @@ h3 {
 }
 
 @media only screen and (min-width: 1200px) {
-  .blog-content .container .gen-btn {
+  div .blog-content .container .gen-btn {
     display: none;
   }
 }
