@@ -16,7 +16,7 @@
 }
 
 @mixin content-box {
-    background: #ffffff20;
+    background: #ffffff10;
     border-radius: 2px;
     backdrop-filter: blur(12px);
     padding: 10px;
@@ -120,6 +120,16 @@ h3 {
 
 .image-wrapper {
     @include center;
+}
+
+.svg-img {
+    @include center;
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    padding: 2em 0;
+    background-color: #ffffff30;
 }
 
 .container { 
@@ -352,9 +362,9 @@ h3 {
 /* Break Points for Other Screen Sizes */
 /***--Tablets--***/
 @media only screen and(min-width: 481px) {
-    .blog-overview .content-wrapper {
-        max-width: 900px;
-    }
+    // .blog-overview, .portfolio-overview .content-wrapper {
+    //     max-width: 900px; //Breaks blog overview centering for some reason
+    // }
 
     .blog-content .content-wrapper {
         max-width: 1200px;

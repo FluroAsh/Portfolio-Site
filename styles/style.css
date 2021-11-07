@@ -70,7 +70,7 @@ h3 {
 }
 
 .content-wrapper {
-  background: #ffffff20;
+  background: #ffffff10;
   border-radius: 2px;
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
@@ -125,6 +125,25 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.svg-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  padding: 2em 0;
+  background-color: #ffffff30;
 }
 
 .container {
@@ -470,9 +489,6 @@ h3 {
 /* Break Points for Other Screen Sizes */
 /***--Tablets--***/
 @media only screen and (min-width: 481px) {
-  .blog-overview .content-wrapper {
-    max-width: 900px;
-  }
   .blog-content .content-wrapper {
     max-width: 1200px;
   }
@@ -610,7 +626,6 @@ h3 {
   color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  z-index: 1;
 }
 
 .about-section .content-wrapper .gen-btn a {
@@ -668,25 +683,7 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-height: 700px;
   padding: 2em 0 0;
-}
-
-.about-section .about-img1, .about-section .about-img2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  width: 100%;
-  height: auto;
-  padding: 2em 0;
 }
 
 /*-- Main Blog Overview Page --*/
@@ -778,6 +775,15 @@ h3 {
 }
 
 .blog-overview .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1em 0 1em;
   border-top: 0.5px solid #646464;
 }
@@ -938,5 +944,98 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/*-- Portfolio Post Page (Currently only 1 post, 2 placeholder posts) --*/
+.portfolio-overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0 0;
+  /* Placeholder Images */
+}
+
+.portfolio-overview img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  max-height: 350px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  opacity: 90%;
+}
+
+.portfolio-overview .image-wrapper a:hover img {
+  border: 2px solid #08fdd8;
+  opacity: 100%;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.portfolio-overview .content-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio-overview .container {
+  padding: 1em 0 1em;
+  border-top: 0.5px solid #646464;
+}
+
+.portfolio-overview .container .image-wrapper {
+  padding: 8px 0;
+}
+
+#portfolio-intro {
+  margin-top: 30px;
+}
+
+.container .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 700px;
+  width: 100%;
+}
+
+/*Resume import will go here*/
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.contact-section .contact-form {
+  width: 100%;
+  padding: 7em;
 }
 /*# sourceMappingURL=style.css.map */

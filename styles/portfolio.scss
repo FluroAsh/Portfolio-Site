@@ -1,22 +1,11 @@
-/*-- Main Blog Overview Page --*/
-.container.page-heading {
-    @include center;
-    margin-top: 50px;
-    width: 100%;
-    height: auto;
-    
-    h2 {
-        border-bottom: 2px solid white;
-    }
-}
-
-.blog-overview {
+/*-- Portfolio Post Page (Currently only 1 post, 2 placeholder posts) --*/
+.portfolio-overview {
     @include center($justify-content: flex-start);
     min-height: 100vh;
     width: 100%;
     flex-direction: column;
     padding: 30px 0 0; 
-    
+
     /* Placeholder Images */
     img {
         @include center;
@@ -38,44 +27,22 @@
         flex-direction: column;
     }
 
-    .blog-details {
-        display: flex;
-        padding-top: 1em;
-        font-weight: 700;
-        flex-flow: row wrap;
-        
-        .blog-author, .blog-date {
-            padding-right: 5px;
-            font-size: 12px;
-        }
-    }
-
     .container {
-        @include center;
         padding: 1em 0 1em;
         border-top: .5px solid $link-static-color;
 
         .image-wrapper {
             padding: 8px 0;
         }
-    }
-}   
-
-/* Break Points for Other Screen Sizes */
-/***--Tablets--***/
-@media only screen and(min-width: 481px) {
-    
+    } 
 }
 
-@media only screen and(min-width: 769px) {
-    body {
-        p {
-            font-size: 1.4em;
-        }
-        h2 {
-            font-size: 1.8em;
-        }
-    }
+#portfolio-intro {
+    margin-top: 30px;
+}
 
-    /*Increase button sizes */
+.container .content-wrapper {
+    display: flex;
+    max-width: 700px;
+    width: 100%;
 }

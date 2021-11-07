@@ -70,7 +70,7 @@ h3 {
 }
 
 .content-wrapper {
-  background: #ffffff20;
+  background: #ffffff10;
   border-radius: 2px;
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
@@ -125,6 +125,24 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.svg-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: 100%;
+  height: auto;
+  padding: 2em 0;
+  background-color: #ffffff30;
 }
 
 .container {
@@ -470,9 +488,6 @@ h3 {
 /* Break Points for Other Screen Sizes */
 /***--Tablets--***/
 @media only screen and (min-width: 481px) {
-  .blog-overview .content-wrapper {
-    max-width: 900px;
-  }
   .blog-content .content-wrapper {
     max-width: 1200px;
   }
