@@ -576,7 +576,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
+  min-height: 800px;
   overflow: hidden;
   padding: 0 0 2em;
 }
@@ -714,7 +714,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 0 0;
+  padding: 30px 0 2em;
   /* Placeholder Images */
 }
 
@@ -955,7 +955,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 0 0;
+  padding: 30px 0 2em;
   /* Placeholder Images */
 }
 
@@ -1030,7 +1030,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2em 0 0;
+  padding: 2em 0 2em;
 }
 
 .contact-section .contact-form {
