@@ -23,17 +23,9 @@ html {
 }
 
 body {
+  width: 100vw;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -142,7 +134,7 @@ h3 {
   width: 100%;
   max-width: 700px;
   height: auto;
-  padding: 2em 0;
+  padding: 1em 1em;
   background-color: #ffffff30;
 }
 
@@ -409,7 +401,6 @@ h3 {
           flex-direction: column;
   position: relative;
   bottom: 0;
-  height: 250px;
   padding: 2em 0 1em;
   line-height: 1.7em;
   border-bottom: #646464;
@@ -500,10 +491,10 @@ h3 {
   }
 }
 
-/* Outer used to wrap the page */
+/* Outer used to wrap the page & anchor  */
 /* Background Image for Intro Block, anchored in Outer */
 .outer {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -520,6 +511,7 @@ h3 {
 }
 
 /*-- Home - Landing Page --*/
+/*-- Hero Banner **/
 .intro-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1020,7 +1012,118 @@ h3 {
 }
 
 /*Resume import will go here*/
+/*-- Contact Page --*/
 .contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  /*Change this to 600px once bug squashed*/
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 0 0;
+}
+
+.contact-section .contact-form {
+  background: #ffffff10;
+  border-radius: 2px;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  padding: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.contact-form {
+  display: block;
+  max-width: 700px;
+  /* Formatting for the individual fields */
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+}
+
+.contact-form form {
+  width: 100%;
+  display: inline-block;
+}
+
+.contact-form input {
+  height: 30px;
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  background-color: #505050;
+  padding: 5px;
+  border: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+}
+
+.contact-form input:focus-visible {
+  outline: 2px solid #08fdd8;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.contact-form input[name="name"], .contact-form input[name="_replyto"] {
+  width: 49%;
+}
+
+.contact-form label[name="name"], .contact-form label[name="_replyto"] {
+  width: 49%;
+}
+
+.contact-form input[name="subject"] {
+  width: 100%;
+}
+
+.contact-form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 5em;
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  background-color: #505050;
+  padding: 5px;
+  border: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+}
+
+.contact-form textarea:focus-visible {
+  outline: 2px solid #08fdd8;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1030,12 +1133,35 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
-  width: 100%;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  margin: 10px 0 0px;
+  border-radius: 5px;
+  background: #0ec6aa;
+  color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin: 0 auto;
 }
 
-.contact-section .contact-form {
-  width: 100%;
-  padding: 7em;
+.contact-form button:hover {
+  background: rgba(255, 255, 255, 0.85);
+  color: #0ec6aa;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.site-footer {
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

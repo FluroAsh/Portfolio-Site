@@ -59,9 +59,9 @@ html {
 }
 
 body {
+    width: 100vw;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    @include center;
     flex-direction: column;
     background: #272727;
     overflow-x: hidden;
@@ -128,7 +128,7 @@ h3 {
     width: 100%;
     max-width: 700px;
     height: auto;
-    padding: 2em 0;
+    padding: 1em 1em;
     background-color: #ffffff30;
 }
 
@@ -298,7 +298,6 @@ h3 {
     flex-direction: column;
     position: relative;
     bottom: 0;
-    height: 250px;
     padding: 2em 0 1em;
     line-height: 1.7em;
     border-bottom: #646464;

@@ -1,10 +1,106 @@
+/*-- Contact Page --*/
 .contact-section {
-    @include center;
-    min-height: 100vh;
+    @include center($justify-content: flex-start);
+    height: 100vh; /*Change this to 600px once bug squashed*/
     width: 100%;
+    flex-direction: column;
+    padding: 2em 0 0;
 
     .contact-form {
+        @include content-box;
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        padding: 7em;
+        max-width: 700px;
+        padding: 10px;
     }
+}
+
+.contact-form {
+    display: block;
+    max-width: 700px;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    form {
+        width: 100%;
+        display: inline-block;
+    }
+
+    input {
+        height: 30px;
+        font-size: 16px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: white;
+        background-color: #505050;
+        padding: 5px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+    }
+    
+    input:focus-visible {
+        outline: 2px solid $primary-color;
+        transition: .1s;
+    }
+
+    /* Formatting for the individual fields */
+    input[name="name"], input[name="_replyto"] {
+        width: 49%;
+    }
+    label[name="name"], label[name="_replyto"] {
+        width: 49%;
+    }
+
+    input[name="subject"] {
+        width: 100%;
+    }
+
+    textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 5em;
+        font-size: 16px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: white;
+        background-color: #505050;
+        padding: 5px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+    }
+
+    textarea:focus-visible {
+        outline: 2px solid $primary-color;
+        transition: .1s;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    button {
+        
+        @include center;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        @include generic-button;
+        margin: 0 auto;
+    }
+
+    button:hover {
+        background: rgba(255, 255, 255, 0.85);
+        color: $primary-color-dim;
+        transition: .4s;
+    }
+}
+
+.site-footer {
+    bottom: 0;
 }

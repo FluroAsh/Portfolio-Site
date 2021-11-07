@@ -1,7 +1,7 @@
-/* Outer used to wrap the page */
+/* Outer used to wrap the page & anchor  */
 /* Background Image for Intro Block, anchored in Outer */ 
 .outer {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     
     img[src*="flinders-bg.jpg"] {
@@ -9,8 +9,6 @@
         z-index: -1;
         height: 100vh;
         width: 100vw;
-        // margin-left: auto;
-        // margin-right: auto;
         object-fit: cover;
         margin: 0 auto 50px;
         filter: opacity(0.5) blur(2px);
@@ -18,6 +16,7 @@
 }
 
 /*-- Home - Landing Page --*/
+/*-- Hero Banner **/
 .intro-section {
     @include center;
     min-height: 100vh;
