@@ -125,7 +125,6 @@ h3 {
 
 .svg-img {
     @include center;
-    flex-shrink: 1;
     width: 100%;
     max-width: 700px;
     height: auto;

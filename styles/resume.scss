@@ -1,6 +1,6 @@
 .resume-section {
     @include center($justify-content: flex-start);
-    min-height: 300px;
+    min-height: 100vh;
     width: 100%;
     flex-direction: column;
     padding: 0 0 2em; 
@@ -23,14 +23,14 @@
         }
     }
 
-    
     .laptop-desktop-resume  {
         width: 100%;
-        height: auto;
+        max-height: 900px;
 
         object {
+            box-sizing: border-box;
             width: 100%;
-            height: 500px;
+            height: 900px;
         }
     }
 
@@ -64,15 +64,25 @@
 }
 
 /* Break Points for Other Screen Sizes */
-/***-- Tablet and Beyond --***/
+/***-- Mobile Screens --***/
 @media only screen and(max-width: 481px) {
     object {
         display: none;
     }
 }
 
+/***-- Tablet and Beyond --***/
 @media only screen and(min-width: 481px) {
     .mobile-resume-block {
         display: none;
+    }
+
+    .resume-section .content-wrapper {
+        max-width: 1200px;
+        height: 100%;
+    }
+    
+    .resume-section .svg-img {
+        max-width: 1200px;
     }
 }
