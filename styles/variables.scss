@@ -296,7 +296,8 @@ h3 {
 /*-- Site Footer --*/
 .site-footer {
     @include center;
-    width: 100%;
+    width: 100vw;
+    min-height: 20vh;
     flex-direction: column;
     position: relative;
     bottom: 0;
