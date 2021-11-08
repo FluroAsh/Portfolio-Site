@@ -1023,7 +1023,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   /*Change this to 600px once bug squashed*/
   width: 100%;
   -webkit-box-orient: vertical;
@@ -1057,6 +1057,7 @@ h3 {
   display: block;
   max-width: 700px;
   /* Formatting for the individual fields */
+  /* Trying to get name and email to appear in the same line lol */
 }
 
 .contact-form h2 {
@@ -1065,7 +1066,6 @@ h3 {
 
 .contact-form form {
   width: 100%;
-  display: inline-block;
 }
 
 .contact-form input {
@@ -1087,10 +1087,6 @@ h3 {
 }
 
 .contact-form input[name="name"], .contact-form input[name="_replyto"] {
-  width: 49%;
-}
-
-.contact-form label[name="name"], .contact-form label[name="_replyto"] {
   width: 49%;
 }
 

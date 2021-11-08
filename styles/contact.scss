@@ -1,7 +1,7 @@
 /*-- Contact Page --*/
 .contact-section {
     @include center($justify-content: flex-start);
-    height: 100vh; /*Change this to 600px once bug squashed*/
+    min-height: 100vh; /*Change this to 600px once bug squashed*/
     width: 100%;
     flex-direction: column;
     padding: 2em 0 2em;
@@ -26,7 +26,6 @@
 
     form {
         width: 100%;
-        display: inline-block;
     }
 
     input {
@@ -45,13 +44,11 @@
         transition: .1s;
     }
 
-    /* Formatting for the individual fields */
-    input[name="name"], input[name="_replyto"] {
+     /* Formatting for the individual fields */
+     input[name="name"], input[name="_replyto"] {
         width: 49%;
     }
-    label[name="name"], label[name="_replyto"] {
-        width: 49%;
-    }
+    /* Trying to get name and email to appear in the same line lol */
 
     input[name="subject"] {
         width: 100%;
@@ -77,6 +74,7 @@
 
     label {
         display: block;
+        // width: 49%;
         margin-bottom: 10px;
     }
 
