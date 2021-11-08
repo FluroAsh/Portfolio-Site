@@ -693,6 +693,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
+  margin-bottom: 30px;
   width: 100%;
   height: auto;
 }
@@ -717,7 +718,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 0 2em;
+  padding: 0 0 2em;
   /* Placeholder Images */
 }
 
@@ -1031,7 +1032,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 0 2em;
+  padding: 0 0 2em;
 }
 
 .resume-section .container {
@@ -1147,7 +1148,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2em 0 2em;
+  padding: 0 0 2em;
 }
 
 .contact-section .contact-form {

@@ -4,7 +4,7 @@
     min-height: 100vh; /*Change this to 600px once bug squashed*/
     width: 100%;
     flex-direction: column;
-    padding: 2em 0 2em;
+    padding: 0 0 2em;
 
     .contact-form {
         @include content-box;
