@@ -57,6 +57,7 @@
     @include center($justify-content: flex-start);
     flex-direction: column;
     min-height: 800px;
+    width: 100%;
     overflow: hidden;
     padding: 0 0 2em;
 

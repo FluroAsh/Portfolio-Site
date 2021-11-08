@@ -37,6 +37,7 @@
         padding: 5px;
         border: none;
         box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+        margin-bottom: 10px;
     }
     
     input:focus-visible {
@@ -48,7 +49,10 @@
      input[name="name"], input[name="_replyto"] {
         width: 49%;
     }
-    /* Trying to get name and email to appear in the same line lol */
+    
+    input[name="_replyto"] {
+        float: right;
+    }
 
     input[name="subject"] {
         width: 100%;
@@ -65,6 +69,7 @@
         padding: 5px;
         border: none;
         box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 5px 3px inset;
+        margin-bottom: 10px;
     }
 
     textarea:focus-visible {
@@ -72,14 +77,7 @@
         transition: .1s;
     }
 
-    label {
-        display: block;
-        // width: 49%;
-        margin-bottom: 10px;
-    }
-
     button {
-        
         @include center;
         background: none;
         color: inherit;

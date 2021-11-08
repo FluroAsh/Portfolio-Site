@@ -32,6 +32,7 @@
 @mixin generic-button {
     @include center;
     width: 180px;
+    max-width: 100%;
     height: 50px;
     margin: 10px 0 0px;
     border-radius: 5px;
