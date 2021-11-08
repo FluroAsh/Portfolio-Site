@@ -717,7 +717,6 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 0 2em;
   /* Placeholder Images */
 }
 
@@ -779,7 +778,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em 0 1em;
+  padding: 1em 0 2em;
   border-top: 0.5px solid #646464;
 }
 
@@ -959,7 +958,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 0 2em;
+  padding: 30px 0 0;
   /* Placeholder Images */
 }
 
@@ -995,7 +994,7 @@ h3 {
 }
 
 .portfolio-overview .container {
-  padding: 1em 0 1em;
+  padding: 1em 0 2em;
   border-top: 0.5px solid #646464;
 }
 
