@@ -386,6 +386,9 @@ h3 {
 /*-- Main Navigation Menu (>=1200px width) --*/
 .main-header {
   height: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .main-header .container {
@@ -403,11 +406,11 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: #272727;
+  background: #353535;
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.1) 0px 2px 6px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.1) 0px 2px 6px;
 }
 
 .main-header .container .logo {
@@ -426,7 +429,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
+  width: 100%;
+  margin-right: 50px;
 }
 
 .main-header .container .main-menu-nav a {
@@ -876,9 +880,9 @@ h3 {
   body h2 {
     font-size: 1.8em;
   }
-  /*Increase button sizes */
 }
 
+/***--Laptops & Large Screens--***/
 /*-- Blog Post Page (Used on all 5) --*/
 .blog-content {
   display: -webkit-box;
@@ -1095,6 +1099,7 @@ h3 {
   width: 100%;
 }
 
+/***--Laptops & Large Screens--***/
 .resume-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1219,6 +1224,7 @@ h3 {
   }
 }
 
+/***--Laptops & Large Screens--***/
 /*-- Contact Page --*/
 .contact-section {
   display: -webkit-box;
@@ -1364,4 +1370,6 @@ h3 {
   -webkit-transition: .4s;
   transition: .4s;
 }
+
+/***--Laptops & Large Screens--***/
 /*# sourceMappingURL=style.css.map */

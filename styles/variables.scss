@@ -296,15 +296,16 @@ h3 {
 /*-- Main Navigation Menu (>=1200px width) --*/
 .main-header {
     height: 80px;
+    position: sticky;
+    top: 0;
 
-    
     .container {
         @include center($justify-content: space-between);
         width: 100%;
         flex-direction: row;
-        background: #272727;
+        background: #353535;
         backdrop-filter: blur(12px);
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.1) 0px 2px 6px;
         
         .logo {   
             width: 5em;
@@ -314,7 +315,8 @@ h3 {
 
         .main-menu-nav {
             @include center;
-            width: 100vw;
+            width: 100%;
+            margin-right: 50px;
     
             a {
                 @include link-format($primary-color: white);
