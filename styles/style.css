@@ -385,9 +385,10 @@ h3 {
 
 /*-- Main Navigation Menu (>=1200px width) --*/
 .main-header {
+  z-index: 98;
   height: 80px;
-  position: -webkit-sticky;
-  position: sticky;
+  width: 100vw;
+  position: fixed;
   top: 0;
 }
 
@@ -558,7 +559,7 @@ h3 {
 /***--Laptops & Large Screens--***/
 @media screen and (min-width: 1200px) {
   main {
-    min-height: calc(100vh - 320px);
+    min-height: calc(100vh - 250px);
   }
   div .blog-content .container .gen-btn {
     display: none;
@@ -578,7 +579,7 @@ h3 {
 .outer img[src*="flinders-bg.jpg"] {
   position: absolute;
   z-index: -1;
-  height: 100vh;
+  height: calc(100vh + 10px);
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -600,6 +601,7 @@ h3 {
           align-items: center;
   min-height: 100vh;
   width: 100%;
+  margin-top: 70px;
 }
 
 .intro-section #ashley-headshot {
@@ -759,10 +761,10 @@ h3 {
 /***--Laptops & Large Screens--***/
 @media screen and (min-width: 1200px) {
   img[src*="flinders-bg.jpg"] {
-    height: calc(100vh - 80px) !important;
+    height: calc(100vh - 70px) !important;
   }
   .intro-section {
-    min-height: calc(100vh - 80px) !important;
+    min-height: calc(100vh - 70px) !important;
   }
 }
 
@@ -883,6 +885,12 @@ h3 {
 }
 
 /***--Laptops & Large Screens--***/
+@media screen and (min-width: 1200px) {
+  .container.page-heading {
+    margin-top: 100px;
+  }
+}
+
 /*-- Blog Post Page (Used on all 5) --*/
 .blog-content {
   display: -webkit-box;

@@ -295,8 +295,10 @@ h3 {
 
 /*-- Main Navigation Menu (>=1200px width) --*/
 .main-header {
+    z-index: 98;
     height: 80px;
-    position: sticky;
+    width: 100vw;
+    position: fixed;
     top: 0;
 
     .container {
@@ -402,8 +404,8 @@ h3 {
     }
 }
 
-/* Break Points for Other Screen Sizes */
-/***--Tablets--***/
+/* Media Break Points  */
+/***--Mobile -> Tablet--***/
 @media screen and(max-width: 1199px) {
     .blog-content .content-wrapper {
         max-width: 1200px;
@@ -418,7 +420,7 @@ h3 {
 /***--Laptops & Large Screens--***/
 @media screen and(min-width: 1200px) {
     main {
-        min-height: calc(100vh - 320px);
+        min-height: calc(100vh - 250px);
     }
     
     div .blog-content .container .gen-btn {
@@ -427,5 +429,9 @@ h3 {
 
     .menu-btn, .header {
         display: none;
+    }
+    
+    .container.page-heading {
+        margin-top: 100px;
     }
 }

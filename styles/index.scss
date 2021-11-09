@@ -7,7 +7,7 @@
     img[src*="flinders-bg.jpg"] {
         position: absolute;
         z-index: -1;
-        height: 100vh;
+        height: calc(100vh + 10px);
         width: 100vw;
         object-fit: cover;
         filter: opacity(0.5) blur(2px);
@@ -20,6 +20,7 @@
     @include center;
     min-height: 100vh;
     width: 100%;
+    margin-top: 70px;
     
     #ashley-headshot {
         @include center;
@@ -103,10 +104,10 @@
 /***--Laptops & Large Screens--***/
 @media screen and(min-width: 1200px) {
     img[src*="flinders-bg.jpg"] {
-        height: calc(100vh - 80px) !important;
+        height: calc(100vh - 70px) !important;
     }
 
     .intro-section {
-        min-height: calc(100vh - 80px) !important;
+        min-height: calc(100vh - 70px) !important;
     }
 }
