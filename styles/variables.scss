@@ -104,20 +104,20 @@ h3 {
 
 .short-content-text {
     @include center($align-items: flex-start);
-        flex-direction: column;
+    flex-direction: column;
         
-        p {
-            line-height: 1.2em;
-        }
-        
-        a {
-            @include link-format;
-            text-decoration: underline; 
-        }
-        
-        a:hover {
-            color: $primary-color-dim;
-        }
+    p {
+        line-height: 1.2em;
+    }
+    
+    a {
+        @include link-format;
+        text-decoration: underline; 
+    }
+    
+    a:hover {
+        color: $primary-color-dim;
+    }
 }
 
 .image-wrapper {
@@ -293,6 +293,43 @@ h3 {
     }
 }
 
+/*-- Main Navigation Menu (1200px+ width) --*/
+.main-header {
+    // width: 100%;
+    // @include center($justify-content: space-between);
+    height: 80px;
+    border-bottom: 2px solid white;
+    
+    .container {
+        @include center($justify-content: space-between);
+        width: 100vw;
+        height: 100%;
+        flex-direction: row;
+        
+        .logo {
+            width: 5em;
+            height: 100%;
+            background-color: black;
+            padding: .8em;
+        }
+
+        .main-menu-nav {
+            width: 100vw;
+            display: flex;
+    
+            a {
+                @include link-format($primary-color: white);
+                font-size: 1.6em;
+                padding: 1em;
+            }
+    
+            a:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
 /*-- Site Footer --*/
 .site-footer {
     @include center;
@@ -329,6 +366,10 @@ h3 {
                 }
             }
         }
+
+        p {
+            font-size: 1em;
+        }
     }
 
     .to-top {
@@ -361,14 +402,23 @@ h3 {
 
 /* Break Points for Other Screen Sizes */
 /***--Tablets--***/
-@media only screen and(min-width: 481px) {
+@media screen and(max-width: 1199px) {
     .blog-content .content-wrapper {
         max-width: 1200px;
     }
+
+    .main-header {
+        display: none;
+    }
+    
 }
 
-// /***--Desktops & Large Screen--***/
-@media only screen and(min-width: 1200px) {
+/***--Laptops & Large Screens--***/
+@media screen and(min-width: 1200px) {
+    main {
+        min-height: calc(100vh - 320px);
+    }
+    
     div .blog-content .container .gen-btn {
         display: none;
     }
