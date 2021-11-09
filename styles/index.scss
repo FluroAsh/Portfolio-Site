@@ -101,6 +101,14 @@
     }
 }
 
+
+/***--Mobile -> Tablet--***/
+@media screen and(max-width: 1199px) {
+    .intro-section {
+        margin-top: 0;
+    }
+}
+
 /***--Laptops & Large Screens--***/
 @media screen and(min-width: 1200px) {
     img[src*="flinders-bg.jpg"] {
