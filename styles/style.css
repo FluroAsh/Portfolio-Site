@@ -412,12 +412,18 @@ h3 {
           backdrop-filter: blur(12px);
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.1) 0px 2px 6px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.1) 0px 2px 6px;
+  /*-- Styling for Active <a> Link --*/
 }
 
 .main-header .container .logo {
   width: 5em;
   height: 100%;
   padding: .5em;
+}
+
+.main-header .container .main-menu-nav a.active {
+  color: #08fdd8;
+  border-bottom: 3px solid #08fdd8;
 }
 
 .main-header .container .main-menu-nav {
@@ -441,6 +447,7 @@ h3 {
   transition: .4s;
   font-size: 16px;
   padding: 1em;
+  border-bottom: rgba(0, 0, 0, 0.5);
 }
 
 .main-header .container .main-menu-nav a:hover {
@@ -561,7 +568,7 @@ h3 {
   main {
     min-height: calc(100vh - 250px);
   }
-  div .blog-content .container .gen-btn {
+  .blog-content .content .gen-btn {
     display: none;
   }
   .menu-btn, .header {

@@ -315,6 +315,12 @@ h3 {
             padding: .5em;
         }
 
+        /*-- Styling for Active <a> Link --*/
+        .main-menu-nav a.active {
+        color: $primary-color;
+        border-bottom: 3px solid $primary-color;
+        }
+
         .main-menu-nav {
             @include center;
             width: 100%;
@@ -324,6 +330,7 @@ h3 {
                 @include link-format($primary-color: white);
                 font-size: 16px;
                 padding: 1em;
+                border-bottom: rgba(0,0,0, .5);
             }
     
             a:hover {
@@ -422,7 +429,7 @@ h3 {
         min-height: calc(100vh - 250px);
     }
     
-    div .blog-content .container .gen-btn {
+    .blog-content .content .gen-btn {
         display: none;
     }
 
