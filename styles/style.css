@@ -568,7 +568,7 @@ h3 {
     display: none;
   }
   .container.page-heading {
-    margin-top: 100px;
+    margin-top: 100px !important;
   }
 }
 
