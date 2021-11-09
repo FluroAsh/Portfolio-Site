@@ -488,6 +488,9 @@ h3 {
   div .blog-content .container .gen-btn {
     display: none;
   }
+  .menu-btn, .header {
+    display: none;
+  }
 }
 
 /* Outer used to wrap the page & anchor  */

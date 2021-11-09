@@ -488,5 +488,8 @@ h3 {
   div .blog-content .container .gen-btn {
     display: none;
   }
+  .menu-btn, .header {
+    display: none;
+  }
 }
 /*# sourceMappingURL=variables.css.map */
