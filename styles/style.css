@@ -1227,7 +1227,7 @@ h3 {
 
 /* Break Points for Other Screen Sizes */
 /***-- Mobile Screens --***/
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 480px) {
   object {
     display: none;
   }
