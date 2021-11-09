@@ -75,6 +75,7 @@ mark {
 
 main {
     margin: 0 4em;
+    min-height: calc(100vh - 250px);
 }
 
 p {
@@ -298,8 +299,6 @@ h3 {
     width: 100vw;
     height: 250px;
     flex-direction: column;
-    position: relative;
-    bottom: 0;
     padding: 2em 0 1em;
     line-height: 1.7em;
     border-bottom: #646464;
@@ -363,10 +362,6 @@ h3 {
 /* Break Points for Other Screen Sizes */
 /***--Tablets--***/
 @media only screen and(min-width: 481px) {
-    // .blog-overview, .portfolio-overview .content-wrapper {
-    //     max-width: 900px; //Breaks blog overview centering for some reason
-    // }
-
     .blog-content .content-wrapper {
         max-width: 1200px;
     }
@@ -378,7 +373,7 @@ h3 {
         display: none;
     }
 
-    // .menu-btn, .header.container.mobile-nav {
+    // .header {
     //     display: none;
     // }
 }

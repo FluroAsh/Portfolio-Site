@@ -1,7 +1,7 @@
 /*-- Contact Page --*/
 .contact-section {
-    @include center($justify-content: flex-start);
-    min-height: 100vh; /*Change this to 600px once bug squashed*/
+    @include center;
+    min-height: 100%; /*Change this to 600px once bug squashed*/
     width: 100%;
     flex-direction: column;
     padding: 0 0 2em;

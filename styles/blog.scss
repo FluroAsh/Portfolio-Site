@@ -4,7 +4,6 @@
     margin-top: 50px;
     margin-bottom: 30px;
     width: 100%;
-    height: auto;
     
     h2 {
         border-bottom: 2px solid white;
@@ -13,7 +12,7 @@
 
 .blog-overview {
     @include center($justify-content: flex-start);
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     flex-direction: column;
     

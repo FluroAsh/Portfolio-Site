@@ -1,7 +1,7 @@
 /* Outer used to wrap the page & anchor  */
 /* Background Image for Intro Block, anchored in Outer */ 
 .outer {
-    min-height: 100vh;
+    min-height: 100%;
     width: 100vw;
     
     img[src*="flinders-bg.jpg"] {
