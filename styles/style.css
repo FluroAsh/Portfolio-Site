@@ -40,7 +40,7 @@ mark {
 }
 
 main {
-  margin: 0 4em;
+  margin: 0 50px;
   min-height: calc(100vh - 250px);
 }
 
@@ -168,8 +168,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -179,8 +179,8 @@ h3 {
 }
 
 .menu-btn__burger {
-  width: 40px;
-  height: 5px;
+  width: 28px;
+  height: 4px;
   background: #fff;
   border-radius: 5px;
   -webkit-transition: all .3s ease-in-out;
@@ -191,8 +191,8 @@ h3 {
 .menu-btn__burger::after {
   content: '';
   position: absolute;
-  width: 40px;
-  height: 5px;
+  width: 28px;
+  height: 4px;
   background: #fff;
   border-radius: 5px;
   -webkit-transition: all .3s ease-in-out;
@@ -200,13 +200,13 @@ h3 {
 }
 
 .menu-btn__burger::before {
-  -webkit-transform: translateY(-13px);
-          transform: translateY(-13px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .menu-btn__burger::after {
-  -webkit-transform: translateY(13px);
-          transform: translateY(13px);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 /*-- Hamburger Animation --*/
@@ -545,8 +545,8 @@ h3 {
   width: 80%;
 }
 
-/* Break Points for Other Screen Sizes */
-/***--Tablets--***/
+/* Media Break Points  */
+/***--Mobile -> Tablet--***/
 @media screen and (max-width: 1199px) {
   .blog-content .content-wrapper {
     max-width: 1200px;
@@ -566,6 +566,9 @@ h3 {
   }
   .menu-btn, .header {
     display: none;
+  }
+  .container.page-heading {
+    margin-top: 100px;
   }
 }
 
@@ -884,13 +887,6 @@ h3 {
   }
 }
 
-/***--Laptops & Large Screens--***/
-@media screen and (min-width: 1200px) {
-  .container.page-heading {
-    margin-top: 100px;
-  }
-}
-
 /*-- Blog Post Page (Used on all 5) --*/
 .blog-content {
   display: -webkit-box;
@@ -1107,7 +1103,6 @@ h3 {
   width: 100%;
 }
 
-/***--Laptops & Large Screens--***/
 .resume-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1232,7 +1227,6 @@ h3 {
   }
 }
 
-/***--Laptops & Large Screens--***/
 /*-- Contact Page --*/
 .contact-section {
   display: -webkit-box;
@@ -1378,6 +1372,4 @@ h3 {
   -webkit-transition: .4s;
   transition: .4s;
 }
-
-/***--Laptops & Large Screens--***/
 /*# sourceMappingURL=style.css.map */
