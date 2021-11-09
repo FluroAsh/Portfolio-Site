@@ -383,7 +383,7 @@ h3 {
   fill: #646464;
 }
 
-/*-- Main Navigation Menu (1200px+ width) --*/
+/*-- Main Navigation Menu (>=1200px width) --*/
 .main-header {
   height: 80px;
 }
@@ -403,6 +403,9 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background: #272727;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -437,7 +440,7 @@ h3 {
 
 .main-header .container .main-menu-nav a:hover {
   color: #08fdd8;
-  text-shadow: rgba(14, 198, 170, 0.5) 0px 3px 6px;
+  text-shadow: rgba(14, 198, 170, 0.16) 0px 3px 6px;
 }
 
 /*-- Site Footer --*/
