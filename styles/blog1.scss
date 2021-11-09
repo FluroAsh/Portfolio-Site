@@ -4,7 +4,6 @@
     min-height: 100vh;
     width: 100%;
     flex-direction: column;
-    padding: 0 0 2em; 
     
     .page-heading {
         border-bottom: 2px solid white;
@@ -30,7 +29,7 @@
     }
 
     .container {
-        padding: 1em 0 2em;
+        padding: 1em 0 0em;
         border-top: .5px solid $link-static-color;
 
         .image-wrapper {
@@ -45,6 +44,7 @@
         .gen-btn {
             @include center;
             @include generic-button;
+            margin: 1em 0;
             
             a {
                 @include center;
@@ -69,4 +69,17 @@
             @include center;
         }
     }
+}
+
+@media screen and(min-width: 1200px) {
+    .blog-content {
+        margin: 1em 0 2em;
+        
+        .container .gen-btn {
+            display: none;
+        }
+        
+    }
+
+    
 }

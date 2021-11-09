@@ -568,9 +568,6 @@ h3 {
   main {
     min-height: calc(100vh - 250px);
   }
-  .blog-content .content .gen-btn {
-    display: none;
-  }
   .menu-btn, .header {
     display: none;
   }
@@ -918,7 +915,6 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 0 2em;
 }
 
 .blog-content .page-heading {
@@ -956,7 +952,7 @@ h3 {
 }
 
 .blog-content .container {
-  padding: 1em 0 2em;
+  padding: 1em 0 0em;
   border-top: 0.5px solid #646464;
 }
 
@@ -1002,6 +998,7 @@ h3 {
   color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin: 1em 0;
 }
 
 .blog-content .container .gen-btn a {
@@ -1042,6 +1039,15 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .blog-content {
+    margin: 1em 0 2em;
+  }
+  .blog-content .container .gen-btn {
+    display: none;
+  }
 }
 
 /*-- Portfolio Post Page (Currently only 1 post, 2 placeholder posts) --*/
